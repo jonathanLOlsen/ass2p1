@@ -6,8 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DataLayer;
-internal class NorthwindContext : DbContext
+public class NorthwindContext : DbContext
 {
+    public NorthwindContext(DbContextOptions<NorthwindContext> options)
+            : base(options)
+    {
+    }
+
     public DbSet<Category> Categories { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<Order> Orders { get; set; }

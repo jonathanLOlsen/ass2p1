@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataLayer\DataLayer.csproj" />
+    <ProjectReference Include="..\NorthwindWebAPI\NorthwindWebAPI.csproj" />
   </ItemGroup>
 
 </Project>
